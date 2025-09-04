@@ -23,7 +23,7 @@ O desenvolvimento abrange o ciclo completo de um projeto de Processamento de Lin
 
 O modelo final, treinado e testado com dados nunca vistos, alcançou uma **acurácia de 88%**. Este resultado demonstra uma alta capacidade do modelo em generalizar e classificar corretamente novas avaliações de filmes.
 
-**➡️ ATENÇÃO:** Altere o valor de `88%` para a acurácia exata que o seu modelo alcançou no final!
+**➡️ ATENÇÃO:** Altere o valor de `84.87%` para a acurácia exata que o seu modelo alcançou no final!
 
 ---
 
