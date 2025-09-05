@@ -3,3 +3,5 @@ nltk
 scikit-learn
 beautifulsoup4
 contractions
+fastapi
+uvicorn[standard]
