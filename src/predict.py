@@ -1,5 +1,3 @@
-# Comando para popular o predict.py
-cat <<'EOL' > src/predict.py
 import joblib
 import sys
 from .data_preprocessing import preprocess_text
@@ -11,7 +9,7 @@ def predict(text: str):
         model = joblib.load('models/linear_svc_model.joblib')
     except FileNotFoundError:
         print("Erro: Modelo ou vetorizador não encontrado.")
-        print("Execute 'python src/train.py' primeiro para treinar o sistema.")
+        print("Execute 'python -m src.train' primeiro para treinar o sistema.")
         sys.exit(1)
 
     # Pré-processar o input do utilizador
@@ -35,5 +33,4 @@ if __name__ == '__main__':
         input_text = " ".join(sys.argv[1:])
         predict(input_text)
     else:
-        print("Uso: python src/predict.py \"<texto da crítica aqui>\"")
-EOL
+        print("Uso: python -m src.predict \"<texto da crítica aqui>\"")

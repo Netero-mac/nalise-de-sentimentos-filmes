@@ -9,10 +9,12 @@ from nltk.stem import WordNetLemmatizer
 
 # --- Download de recursos NLTK (executar uma vez) ---
 def download_nltk_resources():
+    # Adicionada a dependência 'punkt_tab'
     resources = {
         'stopwords': 'corpora/stopwords',
         'punkt': 'tokenizers/punkt',
-        'wordnet': 'corpora/wordnet'
+        'wordnet': 'corpora/wordnet',
+        'punkt_tab': 'tokenizers/punkt_tab'
     }
     for resource_name, resource_path in resources.items():
         try:
