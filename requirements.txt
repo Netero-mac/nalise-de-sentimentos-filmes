@@ -1,0 +1,5 @@
+pandas
+nltk
+scikit-learn
+beautifulsoup4
+contractions

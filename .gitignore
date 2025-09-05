@@ -7,3 +7,30 @@ __pycache__/
 
 # Arquivos do Jupyter Notebook
 .ipynb_checkpoints/
+
+# Comando para popular o .gitignore
+cat <<EOL > .gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Models
+models/*.joblib
+
+# OS-specific
+.DS_Store
+EOL
