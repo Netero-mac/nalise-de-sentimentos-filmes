@@ -1,20 +1,24 @@
-# Comando para popular o README.md
-cat <<'EOL' > README.md
-# 🤖 Análise de Sentimentos em Avaliações de Filmes (v2.0)
+# 🤖 API de Análise de Sentimentos v2.1 (Otimizada)
 
 ## 📜 Descrição
 
-Este projeto implementa um modelo de Machine Learning para análise de sentimentos em avaliações de filmes, classificando-as como **positivo** ou **negativo**. O sistema foi refatorizado para uma arquitetura modular e operacional.
+Este projeto implementa um serviço de API de alta performance para análise de sentimentos em avaliações de filmes, classificando-as como **positivo** ou **negativo**.
+
+O sistema evoluiu de um script monolítico para uma arquitetura modular e robusta, que inclui:
+-   **Otimização de Hiperparâmetros:** Utilização de `GridSearchCV` para encontrar a melhor configuração de modelo.
+-   **Benchmarking Competitivo:** Um pipeline de treino que avalia sistematicamente múltiplos algoritmos para garantir que apenas o modelo de maior performance seja implementado.
+-   **API Operacional:** Exposição do modelo através de um endpoint `POST /predict` utilizando FastAPI.
 
 ## ⚙️ Estrutura do Projeto
 
-- `data/`: Contém o dataset (`IMDB Dataset.csv`).
-- `models/`: Armazena o modelo treinado e o vetorizador serializados (`.joblib`).
-- `src/`: Código fonte do projeto.
-  - `data_preprocessing.py`: Funções para limpeza e pré-processamento de texto.
-  - `train.py`: Script para treinar o modelo, avaliá-lo com validação cruzada e guardar os artefactos.
-  - `predict.py`: Script para carregar o modelo e fazer previsões em novos textos.
-- `requirements.txt`: Lista de dependências Python.
+-   `data/`: Contém o dataset (`IMDB Dataset.csv`).
+-   `models/`: Armazena o modelo campeão serializado (`best_optimized_model.joblib`).
+-   `src/`: Código fonte do projeto.
+    -   `data_preprocessing.py`: Funções para limpeza e pré-processamento de texto.
+    -   `train.py`: Script de benchmarking para treinar, avaliar e selecionar o melhor modelo.
+    -   `predict.py`: Script de inferência via linha de comando (CLI).
+    -   `api.py`: Script do servidor da API (FastAPI).
+-   `requirements.txt`: Lista de dependências Python.
 
 ## 🚀 Como Usar
 
@@ -23,9 +27,9 @@ Este projeto implementa um modelo de Machine Learning para análise de sentiment
 É altamente recomendável usar um ambiente virtual.
 
 ```bash
-# Criar e ativar ambiente virtual
+# Criar e ativar ambiente virtual (exemplo para fish shell)
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate.fish
 
 # Instalar dependências
 pip install -r requirements.txt
