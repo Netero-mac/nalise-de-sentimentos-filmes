@@ -64,7 +64,7 @@ source .venv/bin/activate
 # 3. Instale as dependências necessárias
 pip install -r requirements.txt
 
-3. Treino do Modelo
+###3. Treino do Modelo
 Antes de executar a API, é necessário treinar os modelos. O script de treino executará um benchmark e guardará automaticamente o modelo de melhor performance.
 
 Bash
@@ -72,7 +72,7 @@ Bash
 python -m src.train
 Este processo pode demorar alguns minutos. Ao final, o modelo vencedor será salvo em models/best_optimized_model.joblib.
 
-4. Execução da API
+###4. Execução da API
 Com o modelo treinado, inicie o servidor da API com Uvicorn:
 
 Bash
