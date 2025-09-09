@@ -51,7 +51,8 @@ Este projeto fornece um serviço de API robusto para classificar o sentimento (p
 
 Clone o repositório e configure o ambiente virtual:
 
-```bash
+Bash
+
 # 1. Clone o repositório
 git clone <URL_DO_SEU_REPOSITORIO>
 cd <NOME_DO_DIRETORIO>
