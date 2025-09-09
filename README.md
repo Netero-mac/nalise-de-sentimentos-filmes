@@ -1,7 +1,3 @@
-Com certeza\! Aqui está uma versão revisada e aprimorada do seu `README.md`. As melhorias incluem uma formatação mais clara, adição de seções importantes como "Funcionalidades" e "Licença", e pequenos ajustes no texto para maior clareza e profissionalismo.
-
------
-
 # API de Análise de Sentimentos de Filmes v2.1
 
 Uma API de alta performance para análise de sentimentos, construída com FastAPI e um pipeline de Machine Learning otimizado com Scikit-learn para classificar críticas de filmes.
